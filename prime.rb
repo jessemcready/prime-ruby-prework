@@ -3,10 +3,12 @@ def prime?(number)
   if number < 1
     return false
   end
-  i = 2...number
+  i = 1..number
   for item in i
-    if number % item == 0
-      return false
+    if item != 1 || item != number
+      if number % item == 0
+        return false
+      end
     end
   end
   true
