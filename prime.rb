@@ -3,8 +3,8 @@ def prime?(number)
   i = 2...number
   for item in i
     if number % item == 0
-      return true
+      return false
     end
   end
-  false
+  true
 end
